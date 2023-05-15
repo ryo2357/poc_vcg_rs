@@ -2,7 +2,7 @@
 name = "poc_vcglib"
 version = "0.1.0"
 edition = "2021"
-default-run = "logger_test"
+default-run = "link_test"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [workspace]
