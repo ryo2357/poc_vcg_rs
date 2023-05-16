@@ -1,0 +1,3 @@
+{
+  "C_Cpp.default.includePath": ["vcg/c_src/vcglib", "vcg/c_src/eigen"]
+}
