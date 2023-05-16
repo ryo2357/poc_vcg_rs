@@ -1,11 +1,6 @@
-#include <vcg/complex/algorithms/create/platonic.h>
-#include <vcg/complex/complex.h>
-#include <common/ml_mesh_type.h>
+#include "meshlab.h"
 
-using namespace vcg;
-using namespace std;
-
-int main()
+int print_tetrahedron()
 {
   CMeshO mesh;
   tri::Tetrahedron(mesh); // 正四面体を作成

@@ -1,3 +1,28 @@
 {
-  "C_Cpp.default.includePath": ["vcg/c_src/vcglib", "vcg/c_src/eigen"]
+  "C_Cpp.default.includePath": [
+    "vcg/c_src/vcglib",
+    "vcg/c_src/eigen",
+    "vcg/c_src/meshlab/src"
+  ],
+  "files.associations": {
+    "*.ply": "plaintext",
+    "array": "cpp",
+    "deque": "cpp",
+    "exception": "cpp",
+    "functional": "cpp",
+    "list": "cpp",
+    "map": "cpp",
+    "memory": "cpp",
+    "queue": "cpp",
+    "set": "cpp",
+    "sstream": "cpp",
+    "stack": "cpp",
+    "tuple": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "utility": "cpp",
+    "vector": "cpp",
+    "xstring": "cpp",
+    "iostream": "cpp"
+  }
 }
