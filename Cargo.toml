@@ -12,3 +12,4 @@ members = [
 [dependencies]
 vcg = { path = "./vcg" }
 mylogger = {git = "https://github.com/ryo2357/rs-mylogger"}
+
