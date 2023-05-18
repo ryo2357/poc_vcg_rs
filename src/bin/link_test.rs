@@ -6,7 +6,5 @@ fn main() {
     info!("a: {:?}", a);
 
     vcg::cpp_test::hello_by_cpp();
-
-    vcg::cxx_tutorial::test();
-    // vcg::meshlab::print_tetrahedron_by_cpp();
+    vcg::meshlab::print_tetrahedron_by_cpp();
 }

@@ -1,0 +1,35 @@
+cl .\vcg\c_src\cpp_test\meshlab.cpp /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src
+
+.\vcg\c_src\cpp_test\meshlab.cpp(1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+./vcg/c_src/vcglib\vcg/math/base.h(89): fatal error C1083: include ファイルを開けません。'float.h':No such file or directory
+
+自作ファイルをUTF-BOM付きに変更
+./vcg/c_src/vcglib\vcg/math/base.h(89): fatal error C1083: include ファイルを開けません。'float.h':No such file or directory
+
+cl .\vcg\c_src\cpp_test\meshlab.cpp /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src /std:c++17
+
+[c++ - Visual Studio 2017 errors on standard headers - Stack Overflow](https://stackoverflow.com/questions/42777424/visual-studio-2017-errors-on-standard-headers)
+
+[必ず成功する！VC++2022(cl.exe)をコマンドラインから実行する方法 - Qiita](https://qiita.com/javacommons/items/37ec9429a60db20658e2)
+
+cl .\vcg\c_src\cpp_test\meshlab.cpp /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src
+C:\code\rust\poc_vcglib\vcg\c_src\meshlab\src\common\ml_document\base_types.h(30): fatal error C1189: #error:  "Fatal compilation error: MESHLAB_SCALAR must be defined"
+
+コンパイル時にMESHLAB_SCALARが定義されてないといけない
+
+cl .\vcg\c_src\cpp_test\meshlab.cpp /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src
+warning C4530: C++ 例外処理を使っていますが、アンワインド セマンティクスは有効にはなりません。/EHsc を指定してください。
+
+cl .\vcg\c_src\cpp_test\meshlab.cpp /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src /EHsc
+
+C:\code\rust\poc_vcglib\vcg\c_src\eigen\Eigen\src/Core/arch/Default/GenericPacketMathFunctions.h(647): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイル
+を Unicode 形式で保存してください。
+
+EigenをBOM付きUTFで保存しないとならない
+
+cl .\vcg\c_src\cxx_test\meshlab.cc /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src /EHsc
+
+cl .\vcg\c_src\cl_test\meshlab.cc /I ./vcg/c_src/vcglib /I ./vcg/c_src/eigen /I ./vcg/c_src/meshlab/src /EHsc /source-charset:utf-8 
+
+meshlab.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl CMeshO::CMeshO(void)" (??0CMeshO@@QEAA@XZ) が関数 main で参照されました
+meshlab.obj : error LNK2019: 未解決の外部シンボル "public: virtual __cdecl CMeshO::~CMeshO(void)" (??1CMeshO@@UEAA@XZ) が関数 main で参照されました

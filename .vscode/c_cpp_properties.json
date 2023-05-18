@@ -3,6 +3,7 @@
     {
       "name": "Win32",
       "includePath": [
+        "${default}",
         "vcg/c_src/vcglib",
         "vcg/c_src/eigen",
         "vcg/c_src/meshlab/src"
